@@ -37,3 +37,21 @@ While the statistical analysis suggests no significant difference, it's importan
 Project_5 : Intro to Machine Learning  Mobile carrier Megaline want to develop a model that would analyze subscribers' behavior and recommend one of Megaline's newer plans: Smart or Ultra. During the course of this project we will trained some models and evaluate the quality of those models by accessing the accuracy thru some evaluation metric.Some models improvenment will be perform by looking at the validation set and hyperparameter. A regression method will be perform on models follow by a calculation of the MSE and the selection of the best model will conclude our analysis.
 
 Findings : The RMSE values for both the training and test sets are reasonably close, indicating the model generalizes well and is not overfitting or underfitting.This model can be confidently used to recommend plans (Smart or Ultra) for unseen subscribers, as it maintains consistent predictive accuracy across datasets. The features effectively capture subscriber behavior, allowing the model to distinguish between users who prefer the Ultra and Smart plans.With this information megaline can use this model to identify and segment users based on their communication and internet usage patterns.For example High call duration or frequent internet users: Likely to prefer the Ultra plan. Low usage across metrics: More inclined to stick with the Smart plan. An RMSE of 0.39 on the test set suggests room for improvement in predictive accuracy.The model could be refined by incorporating additional features.
+
+Project_7:BEST OIL WELL PREDICTION ; During the course of this project, with data on oil well in some selected regions,we will assert location for future oil well. We will also build model for predicting volume of reserve in wells, assessing the profitability and the risk factor for existing and potential new oil well project.
+
+Findings: The linear regression model average predicted volume and actual volume of reserve output indicate that all the regions reserve was above the the break even reserve needed to develop a new well even though the profit in each regions was elevated. However after performing boostrappings on the top perfoming wells with a sets number of sample we notice the following:
+
+For region_0 the average profit with or without boostrapping did change much and the 95% confidence interval shows that, based on the bootstrapping results, we can be 95% confident that the true profit from these 200 wells will fall between 20 and 32 million and the range indicates that profits in region_0 can vary substantial.Finally the model indicates that there is a 0% chance of incurring a loss in region_0 which is a strong positive indicator for this region..
+
+For region_1 boostrapping did change the average profit much and is much lower than region_0, at about 6.6m indicating that this region, on average, might offer a smaller return.The confidence interval here indicate that range of possible profits is wider here, from about 1.6 to over 12 million.The risk of loss for Region_1 is .2%, which indicates a small but non-zero chance that the investment could lead to a loss. While the expected return is still positive, there’s a slight chance the actual outcome could fall below the break-even point.
+
+For region_2 average profit for the top 200 wells is greater than in Regions_1 but a bit greater than region_0.The confidence interval for Region_2 is also fairly tight, indicating that there is less uncertainty around the potential profit compared to Region_1. The true profit will likely fall between about 23 million and 34 million with 95% confidence.The risk of loss in Region_2 is zero, meaning the investment in this region is expected to always result in a positive return (based on the prediction).
+
+Region_2 outperforming the others regions.
+
+Region_1 shows the less predictable profit range.
+
+Region_2 and region_0 are the safest, with no risk of loss, making it an attractive choice for risk-averse decision-makers.
+
+As a practical decision making i will advise the company to prioritize Region_0 or Region_2 over Region_1 due to their higher average profits and no risk of loss. However, Region_1 could still be considered if the oil company willing to accept a higher level of uncertainty for a smaller expected profit.
